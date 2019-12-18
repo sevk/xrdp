@@ -30,12 +30,12 @@ fi
 
 if ! test -f libpainter/configure.ac
 then
-  git submodule update --init libpainter
+  git submodule update --depth=1 --init libpainter
 fi
 
 if ! test -f librfxcodec/configure.ac
 then
-  git submodule update --init librfxcodec
+  git submodule update --depth=1 --init librfxcodec
 fi
 
 autoreconf -fvi
